@@ -1,127 +1,230 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Md. Sojib Hossain – Software Engineering Undergraduate</title>
-  <meta name="description" content="Portfolio of Md. Sojib Hossain, CSE undergraduate building full-stack web apps and machine learning projects.">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Md. Sojib Hossain | Software Engineer Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700&family=IBM+Plex+Sans:wght@400;500&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="css/style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
-  <header class="top">
-    <a class="brand" href="#home">Sojib Hossain</a>
-    <nav aria-label="Main">
-      <a href="#about">About</a>
-      <a href="#skills">Skills</a>
-      <a href="#projects">Projects</a>
-      <a href="#education">Education</a>
-      <a href="#contact">Contact</a>
-    </nav>
-    <button class="theme" id="theme" type="button" aria-label="Toggle dark mode">◐</button>
+
+  <!-- Navigation -->
+  <header class="navbar">
+    <div class="container nav-container">
+      <a href="#home" class="logo">Sojib<span>.dev</span></a>
+      <nav class="nav-links">
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#education">Education</a>
+        <a href="#contact" class="btn-nav">Contact</a>
+      </nav>
+    </div>
   </header>
 
-  <main>
-    <section class="hero" id="home">
-      <div class="hero-text">
-        <p class="kicker">CSE undergraduate, Dhaka</p>
-        <h1>I build web apps and machine learning tools that people can trust.</h1>
-        <p class="lead">I’m Md. Sojib Hossain, a Software Engineering major working with React, Spring Boot and Python. I’m looking for the Samsung R&amp;D Institute Bangladesh internship.</p>
-        <div class="actions">
-          <a class="btn primary" href="assets/Sojib_Hossain_CV.pdf" download>Download CV</a>
-          <a class="btn" href="#contact">Get in touch</a>
-        </div>
-      </div>
-
-      <aside class="stock" aria-label="Live stock demo from MyShop">
-        <div class="stock-head">
-          <strong>MyShop stock</strong>
-          <span class="live"><i></i> live demo</span>
-        </div>
-        <ul id="stock-list"></ul>
-        <p class="note">A simulated version of the WebSocket stock updates in my e-commerce project.</p>
-      </aside>
-    </section>
-
-    <section id="about">
-      <h2>About</h2>
-      <p>I’m studying Computer Science and Engineering at United International University, majoring in Software Engineering with a focus on Artificial Intelligence and Data Science. I enjoy turning a problem into working software, from the database and REST API to the page the user sees.</p>
-      <p>I want to join experienced engineers, learn how real products ship, and grow into a strong software professional.</p>
-    </section>
-
-    <section id="skills">
-      <h2>Skills</h2>
-      <dl class="skills">
-        <div><dt>Languages</dt><dd>C, C++, Java, Python, JavaScript, TypeScript</dd></div>
-        <div><dt>Frontend</dt><dd>HTML, CSS, Tailwind CSS, Bootstrap, React.js, Next.js, Thymeleaf</dd></div>
-        <div><dt>Backend and data</dt><dd>Node.js, Spring Boot, REST APIs, WebSocket, MySQL, MongoDB</dd></div>
-        <div><dt>Engineering</dt><dd>Object-oriented design, data structures and algorithms, design patterns, SDLC, Agile/Scrum, unit testing, API design</dd></div>
-        <div><dt>Tools</dt><dd>Git, GitHub, VS Code, Jupyter Notebook</dd></div>
-        <div><dt>AI tools</dt><dd>Prompt engineering, AI-assisted debugging, rapid prototyping with LLMs</dd></div>
-        <div><dt>Working style</dt><dd>Teamwork, communication, quick learning</dd></div>
-      </dl>
-    </section>
-
-    <section id="projects">
-      <h2>Projects</h2>
-
-      <article class="project">
-        <div class="meta">
-          <h3>Dark Patterns in AI</h3>
-          <p class="status">Final year design project, ongoing</p>
-        </div>
-        <div class="body">
-          <p>A machine learning system that estimates risk and assesses how trustworthy online seller pages are.</p>
-          <ul>
-            <li>Isolation Forest anomaly detection to flag suspicious sellers</li>
-            <li>NLP analysis of customer reviews and comments</li>
-            <li>Seller risk scores and risk levels that support user decisions</li>
-          </ul>
-          <p class="tags">Python · Pandas · Scikit-learn</p>
-        </div>
-      </article>
-
-      <article class="project">
-        <div class="meta">
-          <h3>MyShop</h3>
-          <p class="status">E-commerce application</p>
-        </div>
-        <div class="body">
-          <p>A server-rendered shopping site where customers browse products and manage a cart.</p>
-          <ul>
-            <li>Product browsing and shopping cart</li>
-            <li>Real-time stock updates over WebSocket</li>
-            <li>Pages rendered with Thymeleaf and styled with Bootstrap</li>
-          </ul>
-          <p class="tags">Java · Spring Boot · MySQL · Thymeleaf · Bootstrap</p>
-        </div>
-      </article>
-    </section>
-
-    <section id="education">
-      <h2>Education</h2>
-      <div class="edu">
-        <h3>B.Sc. in Computer Science and Engineering</h3>
-        <p>United International University, Dhaka<br>Jan 2023 – early 2027 (expected) · Major: Software Engineering</p>
-        <p class="courses">Data Structures and Algorithms, Object-Oriented Programming, Database Management Systems, Operating Systems, Software Engineering, Machine Learning, Data Mining, Artificial Intelligence.</p>
-      </div>
-      <p class="langs"><strong>Languages:</strong> Bangla (native), English (professional working proficiency)</p>
-    </section>
-
-    <section id="contact">
-      <h2>Contact</h2>
-      <p>The quickest way to reach me is email.</p>
-      <p class="contact-links">
-        <a href="mailto:sojibhossain9345@gmail.com">sojibhossain9345@gmail.com</a>
-        <a href="tel:+8801306619345">01306619345</a>
-        <span>Dhaka, Bangladesh</span>
+  <!-- Hero Section -->
+  <section id="home" class="hero">
+    <div class="container hero-content">
+      <p class="badge">Aspiring Software Engineer &bull; CSE Undergraduate</p>
+      <h1>Hi, I'm <span>Md. Sojib Hossain</span></h1>
+      <p class="hero-subtitle">
+        Computer Science &amp; Engineering undergraduate specializing in Full-Stack Web Development (React, Node.js, Java/Spring Boot) and Applied Machine Learning.
       </p>
-    </section>
-  </main>
+      <div class="hero-buttons">
+        <a href="#projects" class="btn btn-primary">View My Projects</a>
+        <a href="#contact" class="btn btn-outline">Get In Touch</a>
+      </div>
+    </div>
+  </section>
 
-  <footer><p>© <span id="year"></span> Md. Sojib Hossain</p></footer>
-  <script src="js/main.js"></script>
+  <!-- About Section -->
+  <section id="about" class="section bg-light">
+    <div class="container">
+      <h2 class="section-title">About Me</h2>
+      <div class="about-grid">
+        <div class="about-text">
+          <p>
+            I am a Computer Science and Engineering undergraduate at <strong>United International University</strong> in Dhaka, Bangladesh, with academic and hands-on focus across Software Engineering, Artificial Intelligence, and Data Science.
+          </p>
+          <p>
+            I enjoy building scalable full-stack web applications using <strong>React.js, Next.js, Node.js, and Java Spring Boot</strong>, alongside developing data-driven machine learning solutions in Python. I am actively seeking software engineering opportunities where I can solve real-world problems and grow alongside experienced engineering teams.
+          </p>
+        </div>
+        <div class="about-info-card">
+          <ul>
+            <li><strong>Location:</strong> Dhaka, Bangladesh</li>
+            <li><strong>Degree:</strong> B.Sc. in CSE (Expected Early 2027)</li>
+            <li><strong>Focus Areas:</strong> Full-Stack Dev, AI &amp; Data Science</li>
+            <li><strong>Languages:</strong> Bangla (Native), English (Professional)</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills Section -->
+  <section id="skills" class="section">
+    <div class="container">
+      <h2 class="section-title">Technical Skills</h2>
+      <div class="skills-grid">
+        <div class="skill-card">
+          <h3>Programming Languages</h3>
+          <div class="tags">
+            <span>C</span>
+            <span>C++</span>
+            <span>Java</span>
+            <span>Python</span>
+            <span>JavaScript</span>
+            <span>TypeScript</span>
+          </div>
+        </div>
+
+        <div class="skill-card">
+          <h3>Frontend &amp; Web</h3>
+          <div class="tags">
+            <span>HTML5</span>
+            <span>CSS3</span>
+            <span>Tailwind CSS</span>
+            <span>Bootstrap</span>
+            <span>React.js</span>
+            <span>Next.js</span>
+            <span>Thymeleaf</span>
+          </div>
+        </div>
+
+        <div class="skill-card">
+          <h3>Backend &amp; Databases</h3>
+          <div class="tags">
+            <span>Java Spring Boot</span>
+            <span>Node.js</span>
+            <span>REST APIs</span>
+            <span>WebSocket</span>
+            <span>MySQL</span>
+            <span>MongoDB</span>
+          </div>
+        </div>
+
+        <div class="skill-card">
+          <h3>Engineering &amp; AI Tools</h3>
+          <div class="tags">
+            <span>OOP &amp; Design Patterns</span>
+            <span>Data Structures &amp; Algorithms</span>
+            <span>Agile / Scrum</span>
+            <span>Unit Testing</span>
+            <span>Git &amp; GitHub</span>
+            <span>Jupyter Notebook</span>
+            <span>Prompt Engineering</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects" class="section bg-light">
+    <div class="container">
+      <h2 class="section-title">Featured Projects</h2>
+      <div class="projects-grid">
+
+        <!-- Project 1 -->
+        <article class="project-card">
+          <div class="project-header">
+            <span class="project-type">Final Year Design Project (Ongoing)</span>
+            <h3>Dark Patterns in AI</h3>
+          </div>
+          <p class="project-desc">
+            A machine learning system designed to evaluate the trustworthiness of online seller pages and estimate consumer risk levels.
+          </p>
+          <ul class="project-highlights">
+            <li>Implemented anomaly detection using <strong>Isolation Forest</strong> to flag suspicious seller behavior.</li>
+            <li>Applied <strong>NLP techniques</strong> to analyze customer reviews and comment text.</li>
+            <li>Generated automated seller risk scores and risk tiers to support informed buyer decisions.</li>
+          </ul>
+          <div class="tags">
+            <span>Python</span>
+            <span>Pandas</span>
+            <span>Scikit-learn</span>
+            <span>NLP</span>
+            <span>Isolation Forest</span>
+          </div>
+        </article>
+
+        <!-- Project 2 -->
+        <article class="project-card">
+          <div class="project-header">
+            <span class="project-type">Full-Stack Web Application</span>
+            <h3>MyShop &ndash; E-Commerce Platform</h3>
+          </div>
+          <p class="project-desc">
+            A server-rendered e-commerce web application enabling seamless product browsing, cart management, and live inventory synchronization.
+          </p>
+          <ul class="project-highlights">
+            <li>Built dynamic product catalog browsing and full shopping cart workflows.</li>
+            <li>Integrated real-time stock level updates using <strong>WebSocket</strong>.</li>
+            <li>Developed clean, responsive server-rendered views with <strong>Thymeleaf</strong> and <strong>Bootstrap</strong>.</li>
+          </ul>
+          <div class="tags">
+            <span>Java</span>
+            <span>Spring Boot</span>
+            <span>MySQL</span>
+            <span>WebSocket</span>
+            <span>Thymeleaf</span>
+            <span>Bootstrap</span>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Education Section -->
+  <section id="education" class="section">
+    <div class="container">
+      <h2 class="section-title">Education</h2>
+      <div class="education-card">
+        <div class="edu-header">
+          <div>
+            <h3>Bachelor of Science in Computer Science and Engineering</h3>
+            <p class="institution">United International University &bull; Dhaka, Bangladesh</p>
+          </div>
+          <span class="edu-date">Jan 2023 &ndash; Early 2027 (Expected)</span>
+        </div>
+        <p class="edu-major"><strong>Major:</strong> Software Engineering (with focus on AI &amp; Data Science)</p>
+        <p class="edu-coursework">
+          <strong>Relevant Coursework:</strong> Data Structures &amp; Algorithms, Object-Oriented Programming, Database Management Systems, Operating Systems, Software Engineering, Machine Learning, Data Mining, Artificial Intelligence.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="section bg-dark">
+    <div class="container contact-container">
+      <h2>Let's Connect</h2>
+      <p>I am currently open to software engineering internships and collaborative development opportunities.</p>
+      <div class="contact-details">
+        <a href="mailto:sojibhossain9345@gmail.com" class="contact-item">
+          <span>Email:</span> sojibhossain9345@gmail.com
+        </a>
+        <a href="tel:+8801306619345" class="contact-item">
+          <span>Phone:</span> +880 1306-619345
+        </a>
+        <div class="contact-item">
+          <span>Location:</span> Dhaka, Bangladesh
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; 2026 Md. Sojib Hossain. All rights reserved.</p>
+    </div>
+  </footer>
+
 </body>
 </html>
